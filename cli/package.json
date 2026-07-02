@@ -1,0 +1,24 @@
+{
+  "name": "skills-cursor",
+  "version": "0.1.0",
+  "description": "Install Cursor skills and rules into a repo",
+  "type": "module",
+  "bin": {
+    "skills-cursor": "./bin/skills-cursor.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "skills",
+    "rules"
+  ],
+  "scripts": {
+    "test": "node --test lib/install.test.mjs",
+    "bundle": "node scripts/bundle-skills.mjs",
+    "prepublishOnly": "node scripts/bundle-skills.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

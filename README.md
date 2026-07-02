@@ -39,6 +39,16 @@ npx skills@latest add mattpocock/skills
 
 4. Bam - you're ready to go.
 
+### Cursor
+
+Install project skills and the ponytail rule into any repo:
+
+```bash
+npx skills-cursor install
+```
+
+This copies skills to `.cursor/skills/` and `ponytail.mdc` to `.cursor/rules/`. Then run `/setup-matt-pocock-skills` in Cursor to scaffold per-repo config (issue tracker, triage labels, domain docs).
+
 ## Why These Skills Exist
 
 I built these skills as a way to fix common failure modes I see with Claude Code, Codex, and other coding agents.
